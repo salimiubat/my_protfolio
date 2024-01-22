@@ -1,11 +1,16 @@
-import React from 'react'
-import HeaderPage from './HeaderPage'
-import Link from 'next/link'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
+'use client'
+ 
+import { useState } from 'react'
 
+import HeaderPage from './HeaderPage';
+import Link from 'next/link';
 
 export default function Navbar({ showContent = true }) {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   return (
     <div>
       <HeaderPage />
@@ -16,24 +21,24 @@ export default function Navbar({ showContent = true }) {
             <div className="container">
               <div className="row">
                 <div className="col-md-3 logo">
-                   <img className="logo-wt" src="assets/images/salim_logo.jpg" alt="" /> 
-                   <img
-                className="logo-gry"
-                src="assets/images/salim_log.png"
-                alt=""
-              /> 
-                  <Link data-toggle="collapse" data-target="#menu" href="#menu">
-                    <i className="fas d-block d-md-none small-menu fa-bars" />
-                  </Link>
+                  <img className="logo-wt" src="assets/images/salim_logo.jpg" alt="" />
+                  <img className="logo-gry" src="assets/images/salim_log.png" alt="" />
+                  <button
+                    className="d-block d-md-none small-menu btn btn-link"
+                    onClick={handleToggleMenu}
+                  >
+                    <i className="fas fa-bars" />
+                  </button>
                 </div>
-                <div id="menu" className="col-md-9 d-none d-md-block">
+                <div
+                  id="menu"
+                  className={`col-md-9 ${isMenuOpen ? '' : 'collapse'} d-md-block`}
+                >
                   <ul>
                     <li>
-
                       <Link href="/">Home </Link>
                     </li>
                     <li>
-
                       <Link href="/about">About </Link>
                     </li>
                     <li>
@@ -88,21 +93,6 @@ export default function Navbar({ showContent = true }) {
                           <i className="fab fa-instagram" />
                         </Link>
                       </li>
-                      {/* <li>
-                <Link  href="#">
-                  <i className="fab fa-pinterest-p" />
-                 </Link>
-              </li>
-              <li>
-                <Link  href="#">
-                  <i className="fab fa-dribbble" />
-                 </Link>
-              </li>
-              <li>
-                <Link  href="#">
-                  <i className="fab fa-behance" />
-                 </Link>
-              </li> */}
                     </ul>
                   </div>
                 </>
@@ -110,12 +100,7 @@ export default function Navbar({ showContent = true }) {
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
-
-
-
-  )
+  );
 }
