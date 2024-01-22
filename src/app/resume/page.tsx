@@ -38,7 +38,7 @@ export default function page() {
               <h5 className="widget-title">personal information</h5>
               <div className="widget-content">
                 <p>BIRTHDAY : 22 Nov 1993</p>
-                <p>WEBSITE :salim-protfolio-wx1y.onrender.com/</p>
+                <p>WEBSITE :salim-wl81.onrender.com</p>
                 <p>PHONE : +88 01518375925</p>
                 <p>MAIL : salimkc7@gmail.com</p>
                 <p>Location : Uttara,Dhaka</p>
