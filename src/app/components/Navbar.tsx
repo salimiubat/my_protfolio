@@ -1,7 +1,6 @@
 'use client'
- 
-import { useState } from 'react'
 
+import { useState } from 'react'
 import HeaderPage from './HeaderPage';
 import Link from 'next/link';
 
@@ -21,8 +20,10 @@ export default function Navbar({ showContent = true }) {
             <div className="container">
               <div className="row">
                 <div className="col-md-3 logo">
-                  <img className="logo-wt" src="assets/images/salim_logo.jpg" alt="" />
-                  <img className="logo-gry" src="assets/images/salim_log.png" alt="" />
+
+                  <Link href="/"><img className="logo-wt" src="assets/images/salim_logo.jpg" alt="" />
+                  </Link>
+                  {/* <img className="logo-gry" src="assets/images/salim_logo.png" alt="" /> */}
                   <button
                     className="d-block d-md-none small-menu btn btn-link"
                     onClick={handleToggleMenu}
