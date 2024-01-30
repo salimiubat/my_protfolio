@@ -5,7 +5,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
 import Navbar from '../components/Navbar';
-import Login from './Login';
+import LoginPage from './Login';
 import Registration from './Registration';
 
 
@@ -40,13 +40,6 @@ const UserLoginRegistration = () => {
 
   const handleRegistration = async () => {
     try {
-      if (password !== rePassword) {
-        console.error("Passwords do not match");
-        // You can also show a Bootstrap alert here
-        // For simplicity, let's use the browser's built-in alert
-        alert("Passwords do not match");
-        return;
-      }
       const response = await axios.post('http://127.0.0.1:8000/api/users/', {
         username,
         email,
@@ -101,7 +94,7 @@ const UserLoginRegistration = () => {
             >
 
 
-              <Login
+              <LoginPage
                 username={username}
                 password={password}
                 setUsername={setUsername}

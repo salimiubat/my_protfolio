@@ -7,7 +7,8 @@ body{
   .card{
   
     width: 400px;
-    border:none;
+    height: auto;
+        border:none;
   
   }
   

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 
-export default function Login({ username, password, setUsername, setPassword, handleLogin }) {
+export default function LoginPage({ username, password, setUsername, setPassword, handleLogin }) {
   return (
     <div>
       <div className="form px-4 pt-5">
