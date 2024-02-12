@@ -47,7 +47,7 @@ export default function Skill() {
             <div
               className="progress-bar bg-warning"
               role="progressbar"
-              style={{ width: "75%" }}
+              style={{ width: "85%" }}
               aria-valuenow={55}
               aria-valuemin={0}
               aria-valuemax={100}
@@ -60,7 +60,7 @@ export default function Skill() {
             <div
               className="progress-bar bg-warning"
               role="progressbar"
-              style={{ width: "65%" }}
+              style={{ width: "85%" }}
               aria-valuenow={65}
               aria-valuemin={0}
               aria-valuemax={100}
@@ -73,7 +73,20 @@ export default function Skill() {
             <div
               className="progress-bar bg-warning"
               role="progressbar"
-              style={{ width: "75%" }}
+              style={{ width: "85%" }}
+              aria-valuenow={65}
+              aria-valuemin={0}
+              aria-valuemax={100}
+            />
+          </div>
+        </li>
+        <li>
+          <label htmlFor="">Celery</label>
+          <div className="progress">
+            <div
+              className="progress-bar bg-warning"
+              role="progressbar"
+              style={{ width: "83%" }}
               aria-valuenow={65}
               aria-valuemin={0}
               aria-valuemax={100}
@@ -94,7 +107,7 @@ export default function Skill() {
             <div
               className="progress-bar bg-warning progress-bar-striped"
               role="progressbar"
-              style={{ width: "70%" }}
+              style={{ width: "75%" }}
               aria-valuenow={70}
               aria-valuemin={0}
               aria-valuemax={100}
@@ -133,7 +146,20 @@ export default function Skill() {
             <div
               className="progress-bar bg-warning progress-bar-striped"
               role="progressbar"
-              style={{ width: "70%" }}
+              style={{ width: "90%" }}
+              aria-valuenow={80}
+              aria-valuemin={0}
+              aria-valuemax={100}
+            />
+          </div>
+        </li>
+        <li>
+          <label htmlFor="">Material-UI</label>
+          <div className="progress">
+            <div
+              className="progress-bar bg-warning progress-bar-striped"
+              role="progressbar"
+              style={{ width: "90%" }}
               aria-valuenow={80}
               aria-valuemin={0}
               aria-valuemax={100}
