@@ -28,8 +28,8 @@ export default function page() {
               <a href="#!" className="social-link">
                 <i className="fab fa-twitter" />
               </a>
-              <a href="#!" className="social-link">
-                <i className="fab fa-behance" />
+              <a href="https://github.com/iubat71" className="social-link">
+                <i className="fab fa-github" />
               </a>
 
 
@@ -44,12 +44,15 @@ export default function page() {
                 <p>Location : Uttara,Dhaka</p>
                 <button className="btn btn-download-cv btn-primary rounded-pill">
                   {" "}
+                  <a href="resume" download>
+
                   <img
                     src="assets/images/download.svg"
                     alt="download"
                     className="btn-img"
                   />
                   DOWNLOAD CV{" "}
+                  </a>
                 </button>
               </div>
             </div>
@@ -58,7 +61,7 @@ export default function page() {
                 <div className="widget-content">
                   <h5 className="widget-title card-title">LANGUAGES</h5>
                   <p>Bangla : Native</p>
-                  <p>English : Proficient</p>
+                  <p>English : Conversational </p>
 
                 </div>
               </div>

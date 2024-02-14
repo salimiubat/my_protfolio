@@ -90,8 +90,8 @@ export default function Navbar({ showContent = true }) {
                         </Link>
                       </li>
                       <li>
-                        <Link href="#">
-                          <i className="fab fa-instagram" />
+                        <Link href="https://github.com/iubat71">
+                          <i className="fab fa-github" />
                         </Link>
                       </li>
                     </ul>
