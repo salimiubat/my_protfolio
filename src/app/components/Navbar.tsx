@@ -12,7 +12,7 @@ export default function Navbar({ showContent = true }) {
   };
   return (
     <div>
-      <HeaderPage />
+      {/* <HeaderPage /> */}
 
       <div className="home-screen container-fluid">
         <div className="home-cover">
